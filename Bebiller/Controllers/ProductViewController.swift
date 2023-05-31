@@ -24,7 +24,9 @@ class ProductViewController: UIViewController {
         productFeedTable.delegate = self
         productFeedTable.dataSource = self
         
-        productFeedTable.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 300))
+        //productFeedTable.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 300))
+        let headerView = HeroHeadeUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width , height: 300))
+        productFeedTable.tableHeaderView = headerView
     }
     
     override func viewDidLayoutSubviews() {
