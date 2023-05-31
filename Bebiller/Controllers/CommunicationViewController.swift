@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CommunicationViewController.swift
 //  Bebiller
 //
 //  Created by Zeynep Özdemir Açıkgöz on 31.05.2023.
@@ -7,13 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CommunicationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .systemBackground
+
+        
     }
+    
 
 
 }
-
