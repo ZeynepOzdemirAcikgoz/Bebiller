@@ -16,6 +16,7 @@
 		7240D9DB2A2738BA007D213B /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240D9DA2A2738BA007D213B /* ProductViewController.swift */; };
 		7240D9DD2A2738F3007D213B /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240D9DC2A2738F3007D213B /* EducationViewController.swift */; };
 		7240D9E02A27595E007D213B /* CommunicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240D9DF2A27595E007D213B /* CommunicationViewController.swift */; };
+		7240D9E72A276071007D213B /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240D9E62A276071007D213B /* CollectionViewTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		7240D9DA2A2738BA007D213B /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		7240D9DC2A2738F3007D213B /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
 		7240D9DF2A27595E007D213B /* CommunicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationViewController.swift; sourceTree = "<group>"; };
+		7240D9E62A276071007D213B /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,11 @@
 		7240D9C22A273603007D213B /* Bebiller */ = {
 			isa = PBXGroup;
 			children = (
+				7240D9E52A27601C007D213B /* Managers */,
+				7240D9E42A276011007D213B /* Resources */,
+				7240D9E32A275FF8007D213B /* Models */,
+				7240D9E22A275FE4007D213B /* Views */,
+				7240D9E12A275FD5007D213B /* ViewModels */,
 				7240D9D72A27374E007D213B /* Controllers */,
 				7240D9C32A273603007D213B /* AppDelegate.swift */,
 				7240D9C52A273603007D213B /* SceneDelegate.swift */,
@@ -82,6 +89,42 @@
 				7240D9DF2A27595E007D213B /* CommunicationViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7240D9E12A275FD5007D213B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7240D9E22A275FE4007D213B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7240D9E62A276071007D213B /* CollectionViewTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7240D9E32A275FF8007D213B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7240D9E42A276011007D213B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7240D9E52A27601C007D213B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +199,7 @@
 			files = (
 				7240D9C82A273603007D213B /* MainTabBarViewController.swift in Sources */,
 				7240D9DD2A2738F3007D213B /* EducationViewController.swift in Sources */,
+				7240D9E72A276071007D213B /* CollectionViewTableViewCell.swift in Sources */,
 				7240D9C42A273603007D213B /* AppDelegate.swift in Sources */,
 				7240D9C62A273603007D213B /* SceneDelegate.swift in Sources */,
 				7240D9E02A27595E007D213B /* CommunicationViewController.swift in Sources */,
