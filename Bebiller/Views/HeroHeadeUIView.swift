@@ -9,14 +9,7 @@ import UIKit
 
 class HeroHeadeUIView: UIView {
     
-//    private let communicationButon: UIButton = {
-//        let button = UIButton()
-//        button.setTitle("Communication", for: .normal)
-//        button.layer.borderColor = UIColor.white.cgColor
-//        button.layer.borderWidth = 1
-//        button.translatesAutoresizingMaskIntoConstraints = false
-//        return button
-//    }()
+
     
     private let heroImageView: UIImageView = {
         
@@ -31,7 +24,7 @@ class HeroHeadeUIView: UIView {
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [ UIColor.clear.cgColor,
-                                 UIColor.systemMint.cgColor]
+                                 UIColor.white.cgColor]
         
         gradientLayer.frame = bounds
         layer.addSublayer(gradientLayer)
@@ -42,20 +35,10 @@ class HeroHeadeUIView: UIView {
         super.init(frame: frame)
         addSubview(heroImageView)
         addGradient()
-//        addSubview(communicationButon)
-//        applyConstraints()
+
     }
     
-//    private func applyConstraints() {
-//
-//        let communicationButonConstraints = [
-//            communicationButon.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 25),
-//            communicationButon.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -25),
-//              communicationButon.widthAnchor.constraint(equalTo: 100)
-//
-//        ]
-//        NSLayoutConstraint.activate(communicationButonConstraints)
-//    }
+
     
     override func layoutSubviews() {
         super.layoutSubviews()

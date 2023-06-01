@@ -10,6 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
    
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,8 +18,12 @@ class HomeViewController: UIViewController {
         view.backgroundColor = .systemBackground
         
         configureNavbar()
+      
+        let homeHeaderView = HomeHeaderUIView(frame: CGRect(x: 10, y: 110, width: view.bounds.width, height: view.bounds.height))
+        view.addSubview(homeHeaderView)
        
     }
+    
     
    
     private func configureNavbar(){
