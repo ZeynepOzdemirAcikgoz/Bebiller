@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7239AC602A41D9F30055888D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7239AC5F2A41D9F30055888D /* GoogleService-Info.plist */; };
 		7240D9C42A273603007D213B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240D9C32A273603007D213B /* AppDelegate.swift */; };
 		7240D9C62A273603007D213B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240D9C52A273603007D213B /* SceneDelegate.swift */; };
 		7240D9C82A273603007D213B /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240D9C72A273603007D213B /* MainTabBarViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7239AC5F2A41D9F30055888D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7240D9C02A273603007D213B /* Bebiller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bebiller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7240D9C32A273603007D213B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7240D9C52A273603007D213B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				7240D9E12A275FD5007D213B /* ViewModels */,
 				7240D9D72A27374E007D213B /* Controllers */,
 				7240D9C32A273603007D213B /* AppDelegate.swift */,
+				7239AC5F2A41D9F30055888D /* GoogleService-Info.plist */,
 				7240D9C52A273603007D213B /* SceneDelegate.swift */,
 				7240D9CC2A273603007D213B /* Assets.xcassets */,
 				7240D9CE2A273603007D213B /* LaunchScreen.storyboard */,
@@ -155,6 +158,8 @@
 			dependencies = (
 			);
 			name = Bebiller;
+			packageProductDependencies = (
+			);
 			productName = Bebiller;
 			productReference = 7240D9C02A273603007D213B /* Bebiller.app */;
 			productType = "com.apple.product-type.application";
@@ -183,6 +188,8 @@
 				Base,
 			);
 			mainGroup = 7240D9B72A273603007D213B;
+			packageReferences = (
+			);
 			productRefGroup = 7240D9C12A273603007D213B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -199,6 +206,7 @@
 			files = (
 				7240D9D02A273603007D213B /* LaunchScreen.storyboard in Resources */,
 				7240D9CD2A273603007D213B /* Assets.xcassets in Resources */,
+				7239AC602A41D9F30055888D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

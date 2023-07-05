@@ -6,11 +6,13 @@
 //
 
 import UIKit
-
+import FirebaseCore
+import FirebaseFirestore
 class HomeViewController: UIViewController {
     
    
-   
+    let db = Firestore.firestore()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,19 @@ class HomeViewController: UIViewController {
         let homeHeaderView = HomeHeaderUIView(frame: CGRect(x: 10, y: 110, width: view.bounds.width, height: view.bounds.height))
         view.addSubview(homeHeaderView)
        
+        
+        
+        let docRef = db.document("products/example")
+
+        docRef.getDocument { (document, error) in
+            guard let data = document?.data(), error == nil  else {
+                return
+            }
+            
+            print(data)
+            
+        }
+
     }
     
     
