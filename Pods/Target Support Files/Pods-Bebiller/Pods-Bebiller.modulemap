@@ -1,0 +1,6 @@
+framework module Pods_Bebiller {
+  umbrella header "Pods-Bebiller-umbrella.h"
+
+  export *
+  module * { export * }
+}

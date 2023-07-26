@@ -8,9 +8,12 @@
 import UIKit
 
 class ProductViewController: UIViewController {
+    var categories: [CategoryModel] = []
+  let sectionTitles: [String] = ["Solunum Ürünleri", "Kataterler", "Sondalar", "Drenler"]
     
-    let sectionTitles: [String] = ["Solunum Ürünleri", "Kataterler", "Sondalar", "Drenler"]
+   // let sectionTitles: [String] = []
     
+  
     private let productFeedTable: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
         table.register(CollectionViewTableViewCell.self, forCellReuseIdentifier: CollectionViewTableViewCell.identifier)

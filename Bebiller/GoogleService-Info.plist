@@ -3,34 +3,32 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>1069922954077-do4irc90ng0ahi97n74c8q4vk8pefll5.apps.googleusercontent.com</string>
+	<string>248959179827-8ldp19866572plbl871adfpdfdotro3p.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1069922954077-do4irc90ng0ahi97n74c8q4vk8pefll5</string>
+	<string>com.googleusercontent.apps.248959179827-8ldp19866572plbl871adfpdfdotro3p</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBSfdQcwl4qsqoOBC8vCIs4_XeN9fJFoLs</string>
+	<string>AIzaSyDrJvNqOPs9xfc5fRIXnylEUXf7VNF119Q</string>
 	<key>GCM_SENDER_ID</key>
-	<string>1069922954077</string>
+	<string>248959179827</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.zeynepOzdemirAcikgoz.Bebiller</string>
 	<key>PROJECT_ID</key>
-	<string>bebillerapp</string>
+	<string>bebillerapp-94f12</string>
 	<key>STORAGE_BUCKET</key>
-	<string>bebillerapp.appspot.com</string>
+	<string>bebillerapp-94f12.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1069922954077:ios:9f503fa733209d1b0b16b4</string>
-	<key>DATABASE_URL</key>
-	<string>https://bebillerapp-default-rtdb.europe-west1.firebasedatabase.app</string>
+	<string>1:248959179827:ios:56983157a63a11d5321746</string>
 </dict>
 </plist>

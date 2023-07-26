@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7239AC602A41D9F30055888D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7239AC5F2A41D9F30055888D /* GoogleService-Info.plist */; };
+		7213DDDE2A55A1080087179E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7213DDDD2A55A1080087179E /* GoogleService-Info.plist */; };
+		7213DDE52A6416FD0087179E /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7213DDE42A6416FD0087179E /* CategoryModel.swift */; };
+		7213DDE72A6421FE0087179E /* ProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7213DDE62A6421FE0087179E /* ProductsModel.swift */; };
 		7240D9C42A273603007D213B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240D9C32A273603007D213B /* AppDelegate.swift */; };
 		7240D9C62A273603007D213B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240D9C52A273603007D213B /* SceneDelegate.swift */; };
 		7240D9C82A273603007D213B /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240D9C72A273603007D213B /* MainTabBarViewController.swift */; };
@@ -22,10 +24,16 @@
 		7240D9EB2A28B680007D213B /* HomeHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240D9EA2A28B680007D213B /* HomeHeaderUIView.swift */; };
 		7240D9EF2A29121E007D213B /* EducationCollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240D9EE2A29121E007D213B /* EducationCollectionViewTableViewCell.swift */; };
 		7240D9F12A2DC2F9007D213B /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240D9F02A2DC2F9007D213B /* OfferViewController.swift */; };
+		72451DDF2A695C1B0035D0B6 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72451DDE2A695C1B0035D0B6 /* DataManager.swift */; };
+		72451DE12A713F150035D0B6 /* firestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72451DE02A713F150035D0B6 /* firestore.swift */; };
+		83873FA6224754C9F93B4BF5 /* Pods_Bebiller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA07EACE57D6E4E30C0D6EC /* Pods_Bebiller.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7239AC5F2A41D9F30055888D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		34CD1967BB1FE5CF33086842 /* Pods-Bebiller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bebiller.debug.xcconfig"; path = "Target Support Files/Pods-Bebiller/Pods-Bebiller.debug.xcconfig"; sourceTree = "<group>"; };
+		7213DDDD2A55A1080087179E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7213DDE42A6416FD0087179E /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		7213DDE62A6421FE0087179E /* ProductsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsModel.swift; sourceTree = "<group>"; };
 		7240D9C02A273603007D213B /* Bebiller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bebiller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7240D9C32A273603007D213B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7240D9C52A273603007D213B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +50,10 @@
 		7240D9EA2A28B680007D213B /* HomeHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderUIView.swift; sourceTree = "<group>"; };
 		7240D9EE2A29121E007D213B /* EducationCollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationCollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		7240D9F02A2DC2F9007D213B /* OfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferViewController.swift; sourceTree = "<group>"; };
+		72451DDE2A695C1B0035D0B6 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		72451DE02A713F150035D0B6 /* firestore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firestore.swift; sourceTree = "<group>"; };
+		8BA07EACE57D6E4E30C0D6EC /* Pods_Bebiller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bebiller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2B8890EE5FEFAF406723647 /* Pods-Bebiller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bebiller.release.xcconfig"; path = "Target Support Files/Pods-Bebiller/Pods-Bebiller.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +61,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83873FA6224754C9F93B4BF5 /* Pods_Bebiller.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5758FA5A4484897599C83BE4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34CD1967BB1FE5CF33086842 /* Pods-Bebiller.debug.xcconfig */,
+				D2B8890EE5FEFAF406723647 /* Pods-Bebiller.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7213DDE32A6416EE0087179E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7213DDE42A6416FD0087179E /* CategoryModel.swift */,
+				7213DDE62A6421FE0087179E /* ProductsModel.swift */,
+				72451DE02A713F150035D0B6 /* firestore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7240D9B72A273603007D213B = {
 			isa = PBXGroup;
 			children = (
 				7240D9C22A273603007D213B /* Bebiller */,
 				7240D9C12A273603007D213B /* Products */,
+				5758FA5A4484897599C83BE4 /* Pods */,
+				76DD6D89D1BE2EE336926C4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,18 +108,16 @@
 		7240D9C22A273603007D213B /* Bebiller */ = {
 			isa = PBXGroup;
 			children = (
-				7240D9E52A27601C007D213B /* Managers */,
-				7240D9E42A276011007D213B /* Resources */,
-				7240D9E32A275FF8007D213B /* Models */,
+				7213DDE32A6416EE0087179E /* Model */,
+				72451DDD2A695B9C0035D0B6 /* Firestore */,
 				7240D9E22A275FE4007D213B /* Views */,
-				7240D9E12A275FD5007D213B /* ViewModels */,
 				7240D9D72A27374E007D213B /* Controllers */,
 				7240D9C32A273603007D213B /* AppDelegate.swift */,
-				7239AC5F2A41D9F30055888D /* GoogleService-Info.plist */,
 				7240D9C52A273603007D213B /* SceneDelegate.swift */,
 				7240D9CC2A273603007D213B /* Assets.xcassets */,
 				7240D9CE2A273603007D213B /* LaunchScreen.storyboard */,
 				7240D9D12A273603007D213B /* Info.plist */,
+				7213DDDD2A55A1080087179E /* GoogleService-Info.plist */,
 			);
 			path = Bebiller;
 			sourceTree = "<group>";
@@ -103,13 +135,6 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		7240D9E12A275FD5007D213B /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		7240D9E22A275FE4007D213B /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,25 +146,20 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		7240D9E32A275FF8007D213B /* Models */ = {
+		72451DDD2A695B9C0035D0B6 /* Firestore */ = {
 			isa = PBXGroup;
 			children = (
+				72451DDE2A695C1B0035D0B6 /* DataManager.swift */,
 			);
-			path = Models;
+			path = Firestore;
 			sourceTree = "<group>";
 		};
-		7240D9E42A276011007D213B /* Resources */ = {
+		76DD6D89D1BE2EE336926C4A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8BA07EACE57D6E4E30C0D6EC /* Pods_Bebiller.framework */,
 			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		7240D9E52A27601C007D213B /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Managers;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,17 +169,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7240D9D42A273603007D213B /* Build configuration list for PBXNativeTarget "Bebiller" */;
 			buildPhases = (
+				A3D75191EE22DCDB19173B1D /* [CP] Check Pods Manifest.lock */,
 				7240D9BC2A273603007D213B /* Sources */,
 				7240D9BD2A273603007D213B /* Frameworks */,
 				7240D9BE2A273603007D213B /* Resources */,
+				986908C8F17C8676A4348D26 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Bebiller;
-			packageProductDependencies = (
-			);
 			productName = Bebiller;
 			productReference = 7240D9C02A273603007D213B /* Bebiller.app */;
 			productType = "com.apple.product-type.application";
@@ -188,8 +208,6 @@
 				Base,
 			);
 			mainGroup = 7240D9B72A273603007D213B;
-			packageReferences = (
-			);
 			productRefGroup = 7240D9C12A273603007D213B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -206,28 +224,74 @@
 			files = (
 				7240D9D02A273603007D213B /* LaunchScreen.storyboard in Resources */,
 				7240D9CD2A273603007D213B /* Assets.xcassets in Resources */,
-				7239AC602A41D9F30055888D /* GoogleService-Info.plist in Resources */,
+				7213DDDE2A55A1080087179E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		986908C8F17C8676A4348D26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bebiller/Pods-Bebiller-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bebiller/Pods-Bebiller-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bebiller/Pods-Bebiller-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3D75191EE22DCDB19173B1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bebiller-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7240D9BC2A273603007D213B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7213DDE52A6416FD0087179E /* CategoryModel.swift in Sources */,
 				7240D9EB2A28B680007D213B /* HomeHeaderUIView.swift in Sources */,
 				7240D9F12A2DC2F9007D213B /* OfferViewController.swift in Sources */,
 				7240D9C82A273603007D213B /* MainTabBarViewController.swift in Sources */,
 				7240D9DD2A2738F3007D213B /* EducationViewController.swift in Sources */,
 				7240D9E72A276071007D213B /* CollectionViewTableViewCell.swift in Sources */,
 				7240D9C42A273603007D213B /* AppDelegate.swift in Sources */,
+				7213DDE72A6421FE0087179E /* ProductsModel.swift in Sources */,
 				7240D9C62A273603007D213B /* SceneDelegate.swift in Sources */,
 				7240D9E92A276EEF007D213B /* HeroHeadeUIView.swift in Sources */,
 				7240D9EF2A29121E007D213B /* EducationCollectionViewTableViewCell.swift in Sources */,
 				7240D9E02A27595E007D213B /* CommunicationViewController.swift in Sources */,
 				7240D9DB2A2738BA007D213B /* ProductViewController.swift in Sources */,
+				72451DE12A713F150035D0B6 /* firestore.swift in Sources */,
+				72451DDF2A695C1B0035D0B6 /* DataManager.swift in Sources */,
 				7240D9D92A27376A007D213B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +426,7 @@
 		};
 		7240D9D52A273603007D213B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34CD1967BB1FE5CF33086842 /* Pods-Bebiller.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -389,6 +454,7 @@
 		};
 		7240D9D62A273603007D213B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2B8890EE5FEFAF406723647 /* Pods-Bebiller.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

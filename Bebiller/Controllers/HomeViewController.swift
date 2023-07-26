@@ -6,14 +6,13 @@
 //
 
 import UIKit
-import FirebaseCore
+//import FirebaseCore
 import FirebaseFirestore
 class HomeViewController: UIViewController {
     
    
-    let db = Firestore.firestore()
-
-
+  let database = Firestore.firestore()
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,23 +22,46 @@ class HomeViewController: UIViewController {
       
         let homeHeaderView = HomeHeaderUIView(frame: CGRect(x: 10, y: 110, width: view.bounds.width, height: view.bounds.height))
         view.addSubview(homeHeaderView)
-       
+
+        
+        var categories: [CategoryModel] = []
         
         
-        let docRef = db.document("products/example")
+        database.collection("Products").getDocuments() { (querySnapshot, err) in
+          if let err = err {
+              print("Error getting documents: \(err)")
+          } else {
+              let products = querySnapshot?.documents.map{d in
+                  return ProductsModel(
+                      categoryId:  d["categoryId"]  as?  String ??  "",
+                      description: d["description"]  as?  String ??  "",
+                      image:  d["image"]  as?  String ??  "",
+                      name: d["name"]  as?  String ??  "",
+                      title:  d["title"]  as?  String ??  ""
+                  )
+              }
 
-        docRef.getDocument { (document, error) in
-            guard let data = document?.data(), error == nil  else {
-                return
-            }
-            
-            print(data)
-            
-        }
+              self.database.collection("Category").getDocuments(){ (categoryQuerySnapshot,catErr) in
+                  if let catErr = catErr {
+                      print("Error getting documents: \(catErr)")
+                  } else{
+                      categoryQuerySnapshot?.documents.map{c in
 
+                          categories.append(CategoryModel(
+                              id: c.documentID,
+                              name: c["name"]  as?  String ??  "",
+                              image: c["image"]  as?  String ??  "",
+                              products: products!.filter({$0.categoryId == c.documentID})
+                              )
+                          )
+                      }
+                  }
+              }
+          }
+      }
+        
+    
     }
-    
-    
    
     private func configureNavbar(){
         
@@ -76,6 +98,4 @@ class HomeViewController: UIViewController {
         let offset = scrollView.contentOffset.y + defaultOffset
         navigationController?.navigationBar.transform = .init(translationX: 0, y: min(0, -offset))
     }
-    
-
 }
