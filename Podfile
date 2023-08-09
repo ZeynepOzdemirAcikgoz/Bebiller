@@ -9,7 +9,7 @@ pod 'FirebaseFirestore'
 pod 'FirebaseAnalytics'
 pod 'FirebaseStorage'
 pod 'FirebaseAuth'
-
+pod 'SDWebImage'
 
   # Pods for Bebiller
 

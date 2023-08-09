@@ -9,14 +9,8 @@ import Foundation
 
 struct CategoryModel {
     
-//    let result: [Categories]
-//
-//
-//}
-//struct Categories {
-    
     var id : String
     var name : String
-    var image : String?
+    var image : String
     var products : [ProductsModel]?
 }

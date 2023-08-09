@@ -15,7 +15,7 @@ class MainTabBarViewController: UITabBarController {
         
         let vc1 = UINavigationController(rootViewController: HomeViewController())
         let vc2 = UINavigationController(rootViewController: ProductViewController())
-        let vc3 = UINavigationController(rootViewController: EducationViewController())
+        let vc3 = UINavigationController(rootViewController: AcademicViewController())
         let vc4 = UINavigationController(rootViewController: CommunicationViewController())
         let vc5 = UINavigationController(rootViewController: OfferViewController())
         

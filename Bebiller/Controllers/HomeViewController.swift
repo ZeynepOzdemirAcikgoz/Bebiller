@@ -10,7 +10,8 @@ import UIKit
 import FirebaseFirestore
 class HomeViewController: UIViewController {
     
-   
+    var categories: [CategoryModel] = []
+    
   let database = Firestore.firestore()
   
     override func viewDidLoad() {
@@ -22,8 +23,10 @@ class HomeViewController: UIViewController {
       
         let homeHeaderView = HomeHeaderUIView(frame: CGRect(x: 10, y: 110, width: view.bounds.width, height: view.bounds.height))
         view.addSubview(homeHeaderView)
-
         
+        getData()
+
+     /*
         var categories: [CategoryModel] = []
         
         
@@ -60,7 +63,7 @@ class HomeViewController: UIViewController {
           }
       }
         
-    
+    */
     }
    
     private func configureNavbar(){
@@ -97,5 +100,17 @@ class HomeViewController: UIViewController {
         let defaultOffset = view.safeAreaInsets.top
         let offset = scrollView.contentOffset.y + defaultOffset
         navigationController?.navigationBar.transform = .init(translationX: 0, y: min(0, -offset))
+    }
+    
+    private func getData() {
+//        DataManager.shared.getFirebaseData { result in
+//            print(result)
+////            switch result {
+////            case.success(let datas):
+////                print(datas)
+////            case.failure(let error):
+////                print(error)
+////            }
+//        }
     }
 }

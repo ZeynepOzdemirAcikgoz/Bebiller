@@ -6,17 +6,23 @@
 //
 
 import UIKit
+enum Sections: Int {
+    case SolunumÜrünleri = 0
+    case Kataterler = 1
+    case Sondalar = 2
+    case Drenler = 3
+}
 
 class ProductViewController: UIViewController {
-    var categories: [CategoryModel] = []
-  let sectionTitles: [String] = ["Solunum Ürünleri", "Kataterler", "Sondalar", "Drenler"]
+var titlesCategory: [CategoryModel] = [CategoryModel]()
+  let sectionTitles: [String] = ["SolunumÜrünleri", "Kataterler", "Sondalar", "Drenler"]
     
    // let sectionTitles: [String] = []
     
   
     private let productFeedTable: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
-        table.register(CollectionViewTableViewCell.self, forCellReuseIdentifier: CollectionViewTableViewCell.identifier)
+        table.register(ProductCollectionViewTableViewCell.self, forCellReuseIdentifier: ProductCollectionViewTableViewCell.identifier)
         return table
         
     }()
@@ -80,7 +86,9 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     func numberOfSections(in tableView: UITableView) -> Int {
-        return sectionTitles.count    }
+        return sectionTitles.count
+        
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
@@ -88,10 +96,65 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
 //        cell.backgroundColor = .yellow
 //        return cell
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: CollectionViewTableViewCell.identifier, for: indexPath) as? CollectionViewTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ProductCollectionViewTableViewCell.identifier, for: indexPath) as? ProductCollectionViewTableViewCell else {
             return UITableViewCell()
         }
-        return cell
+       
+        
+      /*
+       switch indexPath.section {
+        case Sections.SolunumÜrünleri.rawValue:
+            
+            DataManager.shared.getFirebaseData { result in
+                        switch result {
+                        case.success(let titlesCategory):
+                            cell.configure(with: titlesCategory)
+                        case.failure(let error):
+                            print(error.localizedDescription)
+                        }
+                    }
+            
+        case Sections.Kataterler.rawValue:
+            DataManager.shared.getFirebaseData { result in
+                        switch result {
+                        case.success(let titlesCategory):
+                            cell.configure(with: titlesCategory)
+                        case.failure(let error):
+                            print(error.localizedDescription)
+                        }
+                    }
+        case Sections.Sondalar.rawValue:
+            DataManager.shared.getFirebaseData { result in
+                        switch result {
+                        case.success(let titlesCategory):
+                            cell.configure(with: titlesCategory)
+                        case.failure(let error):
+                            print(error.localizedDescription)
+                        }
+                    }
+        case Sections.Drenler.rawValue:
+            DataManager.shared.getFirebaseData { result in
+                        switch result {
+                        case.success(let titlesCategory):
+                            cell.configure(with: titlesCategory)
+                        case.failure(let error):
+                            print(error.localizedDescription)
+                        }
+                    }
+        default:
+            return UITableViewCell()
+        }
+       */
+//        DataManager.shared.getFirebaseData { result in
+//            switch result {
+//            case.success(let titlesCategory):
+//                cell.configure(with: titlesCategory)
+//            case.failure(let error):
+//                print(error.localizedDescription)
+//            }
+//        }
+//
+      return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
