@@ -1,5 +1,5 @@
 //
-//  CollectionViewTableViewCell.swift
+//  ProductCollectionViewTableViewCell.swift
 //  Bebiller
 //
 //  Created by Zeynep Özdemir Açıkgöz on 31.05.2023.
@@ -8,14 +8,23 @@
 import UIKit
 import SDWebImage
 
+protocol ProductCollectionViewTableViewCellDelegate: AnyObject{
+    func productcollectionViewTableViewCellDidTapCell(_cell: ProductCollectionViewTableViewCell, viewModel: ProductPreviewViewModel)
+
+}
+
 class ProductCollectionViewTableViewCell: UITableViewCell {
 
+
     static let identifier = "CollectionViewTableViewCell"
+    weak var delegate: ProductCollectionViewTableViewCellDelegate?
     private var titlesCategory: [CategoryModel] = [CategoryModel]()
+    
+    var items: [ProductsModel] = [ProductsModel]()
     
     
     private let collectionView: UICollectionView = {
-       
+
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: 140, height: 200)
         layout.scrollDirection = .horizontal
@@ -25,8 +34,6 @@ class ProductCollectionViewTableViewCell: UITableViewCell {
         
     }()
     
-    
-
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.backgroundColor = .systemPink
@@ -34,7 +41,6 @@ class ProductCollectionViewTableViewCell: UITableViewCell {
         
         collectionView.delegate = self
         collectionView.dataSource = self
-        
         
     }
     
@@ -54,32 +60,52 @@ class ProductCollectionViewTableViewCell: UITableViewCell {
         }
     }
     
-    
+
     }
 
 extension ProductCollectionViewTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return titlesCategory.count
-        print(titlesCategory)
+      
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TitleProductCollectionViewCell.identifier, for: indexPath) 
+        
+            
+        let categoryName = titlesCategory[indexPath.section].name
+       // let item = titlesCategory[indexPath.section].products?[indexPath.row]
+        
+        // Hücre içeriğini ayarla (örneğin, item'ın ismi gibi)
+           //cell.textLabel?.text = item.name
+            
+            return cell
 //        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
 //        cell.backgroundColor = .red
 //        return cell
         
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TitleProductCollectionViewCell.identifier, for: indexPath) as? TitleProductCollectionViewCell else {
-            return UICollectionViewCell()
-        }
-//        guard let model = String(titlesCategory[indexPath.row].image else {
+//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TitleProductCollectionViewCell.identifier, for: indexPath) as? TitleProductCollectionViewCell else {
 //            return UICollectionViewCell()
 //        }
-       // cell.configure(with: model)
-        return cell
+//        guard let model = titlesCategory[indexPath.row].image else {
+//            return UICollectionViewCell()
+//        }
+        
+        
+        
+//        for model in titlesCategory[indexPath.row].products {
+//            cell.configure(with: model)
+//        }
+
+            
+        
+      
+
     }
    
 }
 
-
-  
