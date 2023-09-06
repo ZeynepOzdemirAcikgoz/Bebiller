@@ -6,19 +6,14 @@
 //
 
 import UIKit
-enum Sections: Int {
-    case SolunumÜrünleri = 0
-    case Kataterler = 1
-    case Sondalar = 2
-    case Drenler = 3
-}
 
 class ProductViewController: UIViewController {
-var titlesCategory: [CategoryModel] = [CategoryModel]()
-  let sectionTitles: [String] = ["SolunumÜrünleri", "Kataterler", "Sondalar", "Drenler"]
     
-   // let sectionTitles: [String] = []
-    
+  private var titlesCategory: [CategoryModel] = [CategoryModel]()
+    private var productList: [ProductsModel] = [ProductsModel]()
+ 
+    var sectionTitles: [String] = [] // Bölüm başlıklarını saklamak için
+
   
     private let productFeedTable: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
@@ -41,6 +36,12 @@ var titlesCategory: [CategoryModel] = [CategoryModel]()
         productFeedTable.tableHeaderView = headerView
         
         configureNavbar()
+        
+        getDataFromFirebase()
+        
+        
+        
+      
     }
     
     private func configureNavbar(){
@@ -78,82 +79,45 @@ var titlesCategory: [CategoryModel] = [CategoryModel]()
         productFeedTable.frame = view.bounds
     }
     
+    
+    // verileri alma
+   func getDataFromFirebase() {
+       DataManager.shared.fetchDataFromFirebase{[weak self] categories in
+         
+           self?.titlesCategory = categories
+           self?.sectionTitles = categories.map { $0.name ?? "" }
+      
+           self?.productFeedTable.reloadData() // Tabloyu güncelle
+       }
+       productFeedTable.delegate = self
+       productFeedTable.dataSource = self
+   }
+    
 }
 
 extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+       // return titlesCategory.count
+        return titlesCategory[section].products?.count ?? 0
     }
+   
     func numberOfSections(in tableView: UITableView) -> Int {
-        return sectionTitles.count
         
+        // Her bir bölümdeki koleksiyon görünümünün öğe sayısını döndürün (örneğin, 1).
+         //  return 1
+        
+       return titlesCategory.count
+       
     }
     
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-//        cell.textLabel?.text = "Hello world"
-//        cell.backgroundColor = .yellow
-//        return cell
-        
+
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ProductCollectionViewTableViewCell.identifier, for: indexPath) as? ProductCollectionViewTableViewCell else {
             return UITableViewCell()
         }
-       
-        
-      /*
-       switch indexPath.section {
-        case Sections.SolunumÜrünleri.rawValue:
-            
-            DataManager.shared.getFirebaseData { result in
-                        switch result {
-                        case.success(let titlesCategory):
-                            cell.configure(with: titlesCategory)
-                        case.failure(let error):
-                            print(error.localizedDescription)
-                        }
-                    }
-            
-        case Sections.Kataterler.rawValue:
-            DataManager.shared.getFirebaseData { result in
-                        switch result {
-                        case.success(let titlesCategory):
-                            cell.configure(with: titlesCategory)
-                        case.failure(let error):
-                            print(error.localizedDescription)
-                        }
-                    }
-        case Sections.Sondalar.rawValue:
-            DataManager.shared.getFirebaseData { result in
-                        switch result {
-                        case.success(let titlesCategory):
-                            cell.configure(with: titlesCategory)
-                        case.failure(let error):
-                            print(error.localizedDescription)
-                        }
-                    }
-        case Sections.Drenler.rawValue:
-            DataManager.shared.getFirebaseData { result in
-                        switch result {
-                        case.success(let titlesCategory):
-                            cell.configure(with: titlesCategory)
-                        case.failure(let error):
-                            print(error.localizedDescription)
-                        }
-                    }
-        default:
-            return UITableViewCell()
-        }
-       */
-//        DataManager.shared.getFirebaseData { result in
-//            switch result {
-//            case.success(let titlesCategory):
-//                cell.configure(with: titlesCategory)
-//            case.failure(let error):
-//                print(error.localizedDescription)
-//            }
-//        }
-//
+     
       return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -179,6 +143,22 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sectionTitles[section]
+        return titlesCategory[section].name
     }
+    
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//         return titlesCategory[section].name
+//    }
+    
 }
+
+//extension ProductViewController: ProductCollectionViewTableViewCellDelegate{
+//    
+//    func productcollectionViewTableViewCellDidTapCell(_cell: ProductCollectionViewTableViewCell, viewModel: ProductPreviewViewModel) {
+//        DispatchQueue.main.async { [weak self] in
+//            let vc = TitlePreviewViewController()
+//            vc.configure(with: viewModel)
+//            self?.navigationController?.pushViewController(vc, animated: true)
+//        }
+//    }
+//}

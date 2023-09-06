@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class TitleProductCollectionViewCell: UICollectionViewCell {
     
@@ -13,10 +14,11 @@ class TitleProductCollectionViewCell: UICollectionViewCell {
     
     
     private let productImageView: UIImageView = {
-       let imageView = UIImageView()
+        let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         return imageView
     }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.addSubview(productImageView)
@@ -30,9 +32,14 @@ class TitleProductCollectionViewCell: UICollectionViewCell {
         productImageView.frame = contentView.bounds
     }
     
-    public func configure(with model: String) {
-        guard let image = URL(string: categories[0].image) else {return}
-        productImageView.sd_setImage(with: image, completed: nil)
-    }
+    //product ımageları firebase den çekiyoruz
     
+    public func configure(with model: ProductsModel){
+        guard let url = URL(string: model.image) else {
+            return
+            
+        }
+        productImageView.sd_setImage(with: url, completed: nil)
+        
+    }
 }

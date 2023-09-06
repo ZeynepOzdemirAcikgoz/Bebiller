@@ -54,7 +54,7 @@ class AcademicCollectionViewTableViewCell: UITableViewCell {
             productsNameLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
         ]
         
-      
+    
         NSLayoutConstraint.activate(productsUIImageViewConstraints)
         NSLayoutConstraint.activate(productsNameLabelConstraints)
        

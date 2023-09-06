@@ -87,36 +87,252 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "01DD1CBC-D981-40AB-9570-CC19B7239B79"
-            shouldBeEnabled = "No"
+            uuid = "AE7CFA53-C94B-4A9E-BCDD-2049AB90282C"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Bebiller/Views/ProductCollectionViewTableViewCell.swift"
+            filePath = "Bebiller/Controllers/ProductViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "collectionView"
-            landmarkType = "24">
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ProductViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "AE7CFA53-C94B-4A9E-BCDD-2049AB90282C - 6caba3ef824352a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bebiller.Sections.init(rawValue: Swift.Int) -&gt; Swift.Optional&lt;Bebiller.Sections&gt;"
+                  moduleName = "Bebiller"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Controllers/ProductViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "AE7CFA53-C94B-4A9E-BCDD-2049AB90282C - 4f66756917f6c12a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bebiller.Sections.rawValue.getter : Swift.Int"
+                  moduleName = "Bebiller"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Controllers/ProductViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "AE7CFA53-C94B-4A9E-BCDD-2049AB90282C - 9efea21e124cd457"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bebiller.ProductViewController.titlesCategory.getter : Swift.Array&lt;Bebiller.CategoryModel&gt;"
+                  moduleName = "Bebiller"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Controllers/ProductViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "AE7CFA53-C94B-4A9E-BCDD-2049AB90282C - f5cd3740eb9ad843"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bebiller.ProductViewController.titlesCategory.setter : Swift.Array&lt;Bebiller.CategoryModel&gt;"
+                  moduleName = "Bebiller"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Controllers/ProductViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "AE7CFA53-C94B-4A9E-BCDD-2049AB90282C - 89587e104d6a6754"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bebiller.ProductViewController.titlesCategory.modify : Swift.Array&lt;Bebiller.CategoryModel&gt;"
+                  moduleName = "Bebiller"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Controllers/ProductViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "AE7CFA53-C94B-4A9E-BCDD-2049AB90282C - 390056a20b4b1a36"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bebiller.ProductViewController.titlesCategory.modify : Swift.Array&lt;Bebiller.CategoryModel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Bebiller"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Controllers/ProductViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "AE7CFA53-C94B-4A9E-BCDD-2049AB90282C - 2463bda0396adc41"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bebiller.ProductViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Bebiller.ProductViewController"
+                  moduleName = "Bebiller"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Controllers/ProductViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "AE7CFA53-C94B-4A9E-BCDD-2049AB90282C - f1c7272d5c5ca246"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bebiller.ProductViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Bebiller.ProductViewController&gt;"
+                  moduleName = "Bebiller"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Controllers/ProductViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "AE7CFA53-C94B-4A9E-BCDD-2049AB90282C - 2463bda0396adc41"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bebiller.ProductViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Bebiller.ProductViewController"
+                  moduleName = "Bebiller"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Controllers/ProductViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "AE7CFA53-C94B-4A9E-BCDD-2049AB90282C - f1c7272d5c5ca246"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bebiller.ProductViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Bebiller.ProductViewController&gt;"
+                  moduleName = "Bebiller"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Controllers/ProductViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6F80A3FA-3174-41DF-82F5-C93371E6DED7"
+            uuid = "F9E301D1-6C24-40C6-8EEB-60D06EA96D09"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Bebiller/Views/ProductCollectionViewTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "collectionView(_:numberOfItemsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E55CE43E-1E2C-40A9-87A5-B6ED4670D188"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bebiller/Controllers/ProductViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "productFeedTable"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "E55CE43E-1E2C-40A9-87A5-B6ED4670D188 - 9ae58542b9f8c949"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UITableView in variable initialization expression of Bebiller.ProductViewController.productFeedTable : __C.UITableView"
+                  moduleName = "Bebiller"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Controllers/ProductViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "E55CE43E-1E2C-40A9-87A5-B6ED4670D188 - 9ae58542b9f8c928"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UITableView in variable initialization expression of Bebiller.ProductViewController.productFeedTable : __C.UITableView"
+                  moduleName = "Bebiller"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Controllers/ProductViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8FF185AC-E5F0-4F38-B9B9-53729F34FF4A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bebiller/Views/ProductCollectionViewTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "6F80A3FA-3174-41DF-82F5-C93371E6DED7 - fcb01021e8171d2d"
+                  uuid = "8FF185AC-E5F0-4F38-B9B9-53729F34FF4A - fcb01021e8171c5b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -126,12 +342,12 @@
                   urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Views/ProductCollectionViewTableViewCell.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "71"
-                  endingLineNumber = "71"
-                  offsetFromSymbolStart = "168">
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "148">
                </Location>
                <Location
-                  uuid = "6F80A3FA-3174-41DF-82F5-C93371E6DED7 - fcb01021e8171d72"
+                  uuid = "8FF185AC-E5F0-4F38-B9B9-53729F34FF4A - fcb01021e8171c7a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -141,24 +357,9 @@
                   urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Views/ProductCollectionViewTableViewCell.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "72"
-                  endingLineNumber = "72"
-                  offsetFromSymbolStart = "168">
-               </Location>
-               <Location
-                  uuid = "6F80A3FA-3174-41DF-82F5-C93371E6DED7 - fcb01021e8171d72"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bebiller.ProductCollectionViewTableViewCell.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
-                  moduleName = "Bebiller"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Views/ProductCollectionViewTableViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "72"
-                  endingLineNumber = "72"
-                  offsetFromSymbolStart = "132">
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "352">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -166,125 +367,189 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EB080CD3-DA86-4FCC-A695-B4B5A7398CFB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Bebiller/Views/ProductCollectionViewTableViewCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "ProductCollectionViewTableViewCell"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "EB080CD3-DA86-4FCC-A695-B4B5A7398CFB - cdadd8af6566604e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bebiller.ProductCollectionViewTableViewCell.titlesCategory.getter : Swift.Array&lt;Bebiller.CategoryModel&gt;"
-                  moduleName = "Bebiller"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Views/ProductCollectionViewTableViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "88">
-               </Location>
-               <Location
-                  uuid = "EB080CD3-DA86-4FCC-A695-B4B5A7398CFB - c87e0da480df9a42"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bebiller.ProductCollectionViewTableViewCell.titlesCategory.setter : Swift.Array&lt;Bebiller.CategoryModel&gt;"
-                  moduleName = "Bebiller"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Views/ProductCollectionViewTableViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "112">
-               </Location>
-               <Location
-                  uuid = "EB080CD3-DA86-4FCC-A695-B4B5A7398CFB - 6ccd65a7bbc95af1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bebiller.ProductCollectionViewTableViewCell.titlesCategory.modify : Swift.Array&lt;Bebiller.CategoryModel&gt;"
-                  moduleName = "Bebiller"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Views/ProductCollectionViewTableViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "0">
-               </Location>
-               <Location
-                  uuid = "EB080CD3-DA86-4FCC-A695-B4B5A7398CFB - ab7542d9b0f4f5f2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bebiller.ProductCollectionViewTableViewCell.titlesCategory.modify : Swift.Array&lt;Bebiller.CategoryModel&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "Bebiller"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Views/ProductCollectionViewTableViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  uuid = "EB080CD3-DA86-4FCC-A695-B4B5A7398CFB - f3ed91572c5ec114"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bebiller.ProductCollectionViewTableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; Bebiller.ProductCollectionViewTableViewCell"
-                  moduleName = "Bebiller"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Views/ProductCollectionViewTableViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "84">
-               </Location>
-               <Location
-                  uuid = "EB080CD3-DA86-4FCC-A695-B4B5A7398CFB - 7dbd6e5d971a5e9a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bebiller.ProductCollectionViewTableViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Bebiller.ProductCollectionViewTableViewCell&gt;"
-                  moduleName = "Bebiller"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Views/ProductCollectionViewTableViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "76">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D341F68B-DB18-477F-8981-68F07F82E58D"
+            uuid = "80A269D4-E05F-4C94-9260-599C7DB5F743"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Bebiller/Views/ProductCollectionViewTableViewCell.swift"
+            filePath = "Bebiller/Controllers/ProductViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "ProductCollectionViewTableViewCell"
-            landmarkType = "3">
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "80A269D4-E05F-4C94-9260-599C7DB5F743 - 5f22a390f71b64a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bebiller.ProductViewController.tableView(_: __C.UITableView, numberOfRowsInSection: Swift.Int) -&gt; Swift.Int"
+                  moduleName = "Bebiller"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Controllers/ProductViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "80A269D4-E05F-4C94-9260-599C7DB5F743 - 63ab46c50c5c68d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Bebiller.ProductsModel) -&gt; Swift.Bool in Bebiller.ProductViewController.tableView(_: __C.UITableView, numberOfRowsInSection: Swift.Int) -&gt; Swift.Int"
+                  moduleName = "Bebiller"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Controllers/ProductViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "80A269D4-E05F-4C94-9260-599C7DB5F743 - 5f22a390f71b64a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bebiller.ProductViewController.tableView(_: __C.UITableView, numberOfRowsInSection: Swift.Int) -&gt; Swift.Int"
+                  moduleName = "Bebiller"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Controllers/ProductViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "80A269D4-E05F-4C94-9260-599C7DB5F743 - 5f22a390f71b6489"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bebiller.ProductViewController.tableView(_: __C.UITableView, numberOfRowsInSection: Swift.Int) -&gt; Swift.Int"
+                  moduleName = "Bebiller"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Controllers/ProductViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "80A269D4-E05F-4C94-9260-599C7DB5F743 - 5f22a390f71b6489"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bebiller.ProductViewController.tableView(_: __C.UITableView, numberOfRowsInSection: Swift.Int) -&gt; Swift.Int"
+                  moduleName = "Bebiller"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Controllers/ProductViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF3B5CB0-9F89-4330-924A-7D393DD03D7E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bebiller/Controllers/ProductViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CF3B5CB0-9F89-4330-924A-7D393DD03D7E - 63f2f4d5e9c60cc1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bebiller.ProductViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "Bebiller"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Controllers/ProductViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "476">
+               </Location>
+               <Location
+                  uuid = "CF3B5CB0-9F89-4330-924A-7D393DD03D7E - 63f2f4d5e9c60cc1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bebiller.ProductViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "Bebiller"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Controllers/ProductViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "424">
+               </Location>
+               <Location
+                  uuid = "CF3B5CB0-9F89-4330-924A-7D393DD03D7E - 63f2f4d5e9c60c45"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bebiller.ProductViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "Bebiller"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeynepozdemiracikgoz/Desktop/IOSApp/Bebiller/Bebiller/Controllers/ProductViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "424">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A3B6A94B-D849-4417-A55B-2F23AD6FC5D0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bebiller/Controllers/ProductViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "ProductViewController"
+            landmarkType = "21">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C0796733-9DAC-402F-8E64-C53F271D6D2D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bebiller/Controllers/ProductViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
